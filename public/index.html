@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Organize suas tarefas, planeje a semana e encontre materiais de estudo com o Estuda+.">
+  <title>Estuda+ | Planejador de estudos</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="cabecalho">
+    <div class="container navegacao">
+      <a class="logo" href="index.html" aria-label="Estuda+, início">estuda<span>+</span></a>
+      <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu">Menu ☰</button>
+
+      <nav id="menu" aria-label="Menu principal">
+        <a href="index.html" aria-current="page">Início</a>
+        <a href="tarefas.html">Minhas tarefas</a>
+        <a href="sobre.html">Sobre</a>
+      </nav>
+
+      <a class="botao pequeno atalho" href="tarefas.html">Abrir planejador</a>
+    </div>
+  </header>
+
+  <main id="conteudo" class="inicio-visual">
+    <section class="container capa" aria-labelledby="titulo-capa">
+      <div class="capa-texto">
+        <p class="etiqueta">PLANEJADOR DE ESTUDOS</p>
+        <h1 id="titulo-capa">Organize seus <em>estudos.</em></h1>
+        <p>Planeje as atividades da semana, acompanhe os prazos e encontre materiais para estudar.</p>
+
+        <div class="acoes">
+          <a class="botao claro" href="tarefas.html">Abrir meu planejador</a>
+          <a class="link" href="#materiais">Ver materiais <span aria-hidden="true">↓</span></a>
+        </div>
+
+        <small>Seu plano fica salvo no banco de dados.</small>
+      </div>
+
+      <figure class="capa-foto">
+        <img
+          src="https://images.unsplash.com/photo-1453928582365-b6ad33cbcf64?auto=format&amp;fit=crop&amp;w=1200&amp;q=82"
+          alt="Notebook e xícara de café em uma mesa de madeira"
+          width="800" height="640" fetchpriority="high" onerror="this.hidden = true">
+        <figcaption>
+          <span aria-hidden="true">✓</span>
+          <div>
+            <strong>Escolha uma atividade para hoje</strong>
+            <small>Exemplo: revisar HTML e CSS por 30 minutos.</small>
+          </div>
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="container secao materiais" id="materiais" aria-labelledby="titulo-materiais">
+      <p class="etiqueta">BIBLIOTECA DE ESTUDOS</p>
+      <h2 id="titulo-materiais">Materiais para praticar</h2>
+      <p class="descricao">Escolha um tema e abra o material em português.</p>
+
+      <div class="grade-tres">
+        <article class="cartao material web">
+          <p class="etiqueta">DESENVOLVIMENTO WEB</p>
+          <h3>HTML, CSS e JavaScript</h3>
+          <p>Aprenda a estruturar, estilizar e adicionar interatividade a páginas web.</p>
+          <a class="link" href="https://developer.mozilla.org/pt-BR/docs/Learn_web_development"
+             target="_blank" rel="noopener noreferrer">
+            Abrir MDN Web Docs<small> · nova aba</small>
+          </a>
+        </article>
+
+        <article class="cartao material python">
+          <p class="etiqueta">PROGRAMAÇÃO</p>
+          <h3>Prática de Python</h3>
+          <p>Consulte exemplos de listas, condições, laços e funções no tutorial oficial.</p>
+          <a class="link" href="https://docs.python.org/pt-br/3/tutorial/"
+             target="_blank" rel="noopener noreferrer">
+            Abrir tutorial do Python<small> · nova aba</small>
+          </a>
+        </article>
+
+        <article class="cartao material matematica">
+          <p class="etiqueta">MATEMÁTICA</p>
+          <h3>Revisão de matemática</h3>
+          <p>Pratique com exercícios e aulas de matemática em português.</p>
+          <a class="link" href="https://pt.khanacademy.org/math"
+             target="_blank" rel="noopener noreferrer">
+            Abrir Khan Academy<small> · nova aba</small>
+          </a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container rotina" aria-labelledby="titulo-rotina">
+      <div class="rotina-foto">
+        <img
+          src="https://images.unsplash.com/photo-1643148636637-58b3eb95cdad?auto=format&amp;fit=crop&amp;w=1000&amp;q=82"
+          alt="Caderno aberto, caneta e xícara sobre uma mesa"
+          width="640" height="480" loading="lazy" decoding="async" onerror="this.hidden = true">
+      </div>
+
+      <div class="rotina-texto">
+        <p class="etiqueta">COMO COMEÇAR</p>
+        <h2 id="titulo-rotina">Monte seu plano da semana</h2>
+
+        <ol>
+          <li>Escolha uma atividade concreta, como resolver cinco exercícios.</li>
+          <li>Cadastre a tarefa com a matéria e o prazo.</li>
+          <li>Marque como concluída e acompanhe seu progresso no planejador.</li>
+        </ol>
+
+        <a class="botao" href="tarefas.html#formulario">Cadastrar minha primeira tarefa</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape container">
+    <a class="logo" href="index.html" aria-label="Estuda+, início">estuda<span>+</span></a>
+    <small class="creditos-fotos">
+      Fotos de
+      <a href="https://unsplash.com/photos/aOC7TSLb1o8" target="_blank" rel="noopener noreferrer">Lauren Mancke</a>
+      e
+      <a href="https://unsplash.com/photos/CeW--PHwpGc" target="_blank" rel="noopener noreferrer">Priscilla Du Preez</a>
+      no Unsplash.
+    </small>
+    <small>Projeto acadêmico · 2026</small>
+  </footer>
+</body>
+</html>

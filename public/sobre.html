@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Conheça o Estuda+ e aprenda a organizar sua rotina de estudos.">
+  <title>Sobre | Estuda+</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="pular" href="#conteudo">Pular para o conteúdo</a>
+  <header class="cabecalho">
+    <div class="container navegacao">
+      <a class="logo" href="index.html" aria-label="Estuda+, início">estuda<span>+</span></a>
+      <button class="menu-botao" type="button" aria-expanded="false" aria-controls="menu">Menu ☰</button>
+      <nav id="menu" aria-label="Menu principal">
+        <a href="index.html">Início</a>
+        <a href="tarefas.html">Minhas tarefas</a>
+        <a href="sobre.html" aria-current="page">Sobre</a>
+      </nav>
+      <a class="botao pequeno atalho" href="tarefas.html">Começar agora ↗</a>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container pagina">
+    <section class="titulo-pagina"><p class="etiqueta">SOBRE O PROJETO</p><h1>Como funciona o <em>Estuda+.</em></h1><p>O Estuda+ é um projeto acadêmico para organizar atividades de estudo por matéria, prazo e prioridade.</p></section>
+    <section class="grade-tres" aria-label="Como usar o Estuda+">
+      <article class="cartao recurso"><h2>Cadastre uma tarefa</h2><p>Abra Minhas tarefas. Preencha o título, a matéria, o prazo e a prioridade de cada atividade.</p></article>
+      <article class="cartao recurso"><h2>Edite e filtre</h2><p>Edite quando seus planos mudarem. Encontre atividades pela busca ou filtre pelo status.</p></article>
+      <article class="cartao recurso"><h2>Acompanhe o progresso</h2><p>Concluiu uma atividade? Marque como concluída e acompanhe a evolução na barra de progresso.</p></article>
+    </section>
+
+    <section class="secao perguntas" aria-labelledby="duvidas">
+      <h2 id="duvidas">Dúvidas frequentes</h2>
+      <details open><summary>Preciso criar uma conta?</summary><p>Não. Você pode começar a organizar suas tarefas assim que abrir o site.</p></details>
+      <details><summary>Onde minhas tarefas ficam salvas?</summary><p>Elas ficam em um banco SQLite no computador que está rodando o servidor PHP. O planejamento continua salvo quando você fecha o navegador. O botão Exportar .txt permite guardar uma cópia para leitura.</p></details>
+      <details><summary>Posso alterar uma tarefa depois de cadastrá-la?</summary><p>Sim. Use Editar para mudar os dados, Concluir para finalizar ou Reabrir para voltar a estudar. A exclusão pede uma confirmação antes de remover a tarefa.</p></details>
+      <details><summary>O site funciona no celular?</summary><p>Sim. O layout se adapta ao tamanho da tela, e o menu fica disponível pelo botão Menu.</p></details>
+    </section>
+    <section class="convite"><div><h2>Pronto para montar seu plano?</h2></div><a class="botao claro" href="tarefas.html">Abrir meu planejamento ↗</a></section>
+  </main>
+
+  <footer class="rodape container"><a class="logo" href="index.html">estuda<span>+</span></a><small>Projeto acadêmico · 2026</small></footer>
+</body>
+</html>
