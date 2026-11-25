@@ -8,6 +8,10 @@ Projeto acadêmico com início, planejador de tarefas e página sobre o site.
 
 O site permite cadastrar, editar, excluir, concluir e reabrir atividades de estudo. Também oferece busca, filtro de situação, contadores, barra de progresso e exportação em texto. O visual usa tons de azul e se adapta a telas menores.
 
+## Relatório acadêmico
+
+[Abrir o relatório do projeto em PDF](docs/Relatorio_Estuda_Mais_Richard.pdf). O documento apresenta o desenvolvimento individual, as tecnologias utilizadas e capturas do site em funcionamento.
+
 ## Como executar
 
 1. Use PHP 8 com o driver `pdo_sqlite` habilitado. Confira com `php -m`.
